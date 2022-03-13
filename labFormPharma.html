@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lab Form</title>
+        <link rel="stylesheet" href="labform.css" >
+    </head>
+    <body>
+        <div id="container">          
+            <form action="" id="form">
+                <div id="left">
+                    <section>
+                        <table id="firstSec">
+                            <tr>
+                                <label class="main">1.Your Contact Details</label>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="Fullname" id="fn" placeholder="Full Name" /></td>
+                                <td><input type="text" name="PatientId" id="pd" placeholder="Patient Id if exists" /></td>
+                            </tr>
+                            <tr>
+                                <td><input type="number" name="contactDetails" id="cd" placeholder="Contact Number" /></td>
+                                <td><input type="email" name="email" id="email" placeholder="Email Id" /></td>
+                            </tr>
+                        </table>
+                    </section>
+                    <section>
+                        <table id="secondSec">
+                            <tr>
+                                <label class="main">2.Address</label>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="HNo" id="hn" placeholder="H.No" /></td>
+                                <td><input type="text" name="street" id="st" placeholder="Street" /></td> 
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="area" id="area" placeholder="Area" /></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td> 
+                                    <label for ="district">District</label>
+                                    <br>
+                                    <select id="district" name="district">
+                                        <option selected value="choose">Choose</option>
+                                        <option value="BNG">Bangalore</option>
+                                        <option value="HYD">Hyderabad</option>
+                                        <option value="VTZ">Visakhapatnam</option>
+                                        <option value="MAS">Chennai</option>
+                                        <option value="DEL">Delhi</option>
+                                    </select>                  
+                                </td>
+                            </tr>
+                        </table>
+                    </section>
+                    <section>
+                        <table id="thirdSec">
+                            <tr><label class="main" for="test">3.Choose the Test Type.</label></tr>
+                            <tr> 
+                                <fieldset id="test">
+                                <label><input type="checkbox" name="test" value="cbc" >CBC</label>
+                                <br />
+                                <label><input type="checkbox" name="test" value="urine">Complete Urine</label>
+                                <br />
+                                <label><input type="checkbox" name="test" value="lipid">Lipid Profile</label>
+                                <br />
+                                <label><input type="checkbox" name="test" value="TSH">Thyroid Stimulating Hormone(TSH)</label>
+                                <br />
+                                <label><input type="checkbox" name="test" value="glucose">Glucose Test</label>
+                                </fieldset>
+                            </tr>
+                        </table>
+                    </section>
+                    <section>
+                        <table id="fourthSec">
+                            <tr><label for="term" class="main" >4.Do you want a hard copy of the report also?</label></tr>
+                            <tr>
+                                <fieldset id="term">
+                                    <label><input type="radio" name="term" value="yes" >Yes</label>
+                                    <label><input type="radio" name="term" value="no" >No</label>
+                                </fieldset>
+                            </tr>
+                        </table>
+                    </section>
+                    <section>
+                        <table id="fifthSec">
+                            <tr><label class="main" >5.Select Your Comfortable Date and Time?</label></tr>
+                            <tr>
+                                <td>
+                                    <label for="date">Date</label>:
+                                    <input type="date" name="date" id="date">
+                                </td>
+                            <td>
+                                <label for="time">Time</label>:
+                                <input type="time" name="time" id="time">
+                            </td>
+                            </tr>
+                        </table>
+                    </section>
+                    <section id="lastSec">
+                        <table id="bottom">
+                            <tr>
+                                <td>
+                                    <button type="reset">Reset</button>
+                                    
+                                    <button type="submit">Submit</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </section>
+                </div>
+
+                <div id="right">
+                    <img  id="lab" src="Lab-Test/lab-test.jpg" />
+                </div>        
+            </form>
+        </div>
+    </body>
+</html>

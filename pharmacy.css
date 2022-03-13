@@ -1,0 +1,165 @@
+body{
+    height: auto;
+    margin: 0%; /*No left spaces */
+}
+
+header{
+    margin : 0%;
+    padding : 20px 100px 20px 20px;
+    text-align : right;
+    color : white;
+    font-size: 2em;
+    background-color: rgba(0, 0, 0, 0.7);
+    
+}
+ nav{
+    top: 0%;
+    z-index:1 ;
+    position: sticky;
+    
+ }
+ ul{
+     margin: 0%;
+     background-color: rgba(0, 0, 0, 0.5);
+ }
+ nav>ul>li{
+    display:inline-block;
+ }
+ li>a{
+     text-decoration: none;
+     color: white;
+     padding: 10px;
+     font-size: 2em;
+ }
+
+ ul>li:hover{
+     cursor:pointer;
+     background-color: rgba(0, 0, 0, 0.8);
+ }
+
+ ul>li>ul{
+      display: none;
+ }
+ li>ul>li{
+     display: block;
+ }
+
+ #dropdown li>a{
+     color:blue;
+ }
+
+ ul>li:hover>ul{
+     display:block;
+     position:absolute;
+     background-color: whitesmoke;
+     padding: 10px;
+ }
+
+
+
+
+
+footer{
+    margin: 0%;
+    padding: 10px 100px 10px 10px;
+    text-align: right;
+    color:white;
+    background-color: black;
+}
+
+#slider_class{
+    border: 2px solid steelblue;
+    overflow: hidden;
+    display:flex;
+    height:400px;
+    width:auto;
+    position:relative;
+    justify-content: center;
+}
+
+#slide{
+    visibility:hidden;
+    position:absolute;
+    animation-name:imageSlide;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes imageSlide{
+    0% {visibility:visible;}
+    20% {visibility:hidden;}
+}
+
+#slide:nth-child(1) {animation-delay: 0s}
+#slide:nth-child(2) {animation-delay: 5s}
+#slide:nth-child(3) {animation-delay: 10s}
+#slide:nth-child(4) {animation-delay: 15s}
+#slide:nth-child(5) {animation-delay: 20s}
+
+section{
+    border: 5px solid black;
+    padding-bottom: 15px;
+}
+
+h2{
+    margin-top: 0%;
+}
+
+#covid-care #inner_container{
+    justify-content: center;
+    display:flex;
+    
+}
+#diabetes-care #inner_container{
+    justify-content: center;
+    display:flex;
+    
+}
+
+
+
+#inner_container div{
+    display:inline-block;
+    padding:10px;
+    background:rgba(209, 202, 202, 0.5);
+    height : 45vh;
+    width: 20vw;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#inner_container>div>img{
+    display:flex;
+    height:200px;
+    width: 270px;  
+}
+
+#inner_container>div:hover{
+     transform: scale(1.1);
+}
+
+
+div p, button{
+    margin:0%;
+}
+
+
+div>p:nth-child(1){
+ font-weight: 700;
+}
+div>p:nth-child(3),p:nth-child(4){
+   color:blue;
+   }
+div>button{
+    width: 100%;
+    font-weight:600;
+    color:orangered;
+    border-color: blue;
+    border-radius: 10px;
+}
+button:active{
+  background-color: rgb(250,234,230);
+  border-color: rgb(0,255,76);
+}
+
+
